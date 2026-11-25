@@ -28,3 +28,6 @@ X may cache cards and may need to validate or approve player cards (or
 whitelist the domain) before an interactive player appears. If a post of the
 page URL shows only a regular link preview, that is a common outcome even
 when the tags and headers are correct.
+
+## Works with any stack
+The skill is framework-agnostic and includes specific instructions for plain HTML, React (Vite/CRA), Next.js, Angular, Vue/Nuxt, Svelte/SvelteKit, Astro and server-rendered apps, plus header config for Vercel, Netlify, Cloudflare Pages, GitHub Pages and nginx.
