@@ -81,8 +81,26 @@ Render the tags in the page template and set the CSP header in the response (mid
 - **GitHub Pages**: can't set custom headers. It sends no `X-Frame-Options`, so framing usually works, but you can't add the CSP.
 - **nginx**: `add_header Content-Security-Policy "frame-ancestors ..." always;` and make sure nothing adds `X-Frame-Options`.
 
-## 6. Design for the iframe
-Fits the declared width/height and mobile, no horizontal scroll, no popups or `window.open` for core features, downloads via `<a download>`/Blob, no login or third-party cookies (they are blocked in iframes).
+## 6. Design for the iframe: it must fit the card with no scroll
+The app has to fit entirely inside the card X draws. Nobody scrolls inside an embedded post, so anything below the fold is effectively missing.
+
+- **Declared size sets the shape, not the pixels.** `twitter:player:width` / `twitter:player:height` define the aspect ratio. X scales the iframe to the width of the post, so the real viewport is much smaller than the declared numbers.
+- **Typical sizes to design for** (approximate, they vary by client and layout):
+  - Declared: `1200 x 900` (4:3) is a good default; `1280 x 720` (16:9) for wide layouts. Keep the ratio between 16:9 and 1:1.
+  - Desktop web: the card is roughly 500-600 px wide, so a 4:3 card is about 500 x 375 px.
+  - Mobile apps: roughly 320-400 px wide, so a 4:3 card is about 360 x 270 px.
+- **Rules:**
+  - Set `html, body { margin: 0; height: 100%; overflow: hidden; }` and build the layout to the viewport (`100vw` / `100vh`, flex or grid), never to a fixed pixel height.
+  - Test at the smallest target (about 320 x 240 for 4:3) and the declared size; nothing may be cut off or need scrolling at either.
+  - Scale content with the container: `clamp()` for font sizes, container queries or `vmin` units, and hide secondary controls on small sizes instead of stacking them.
+  - Keep tap targets at least 32 px at the smallest size, and one primary action on screen.
+- Also: no horizontal scroll, no popups or `window.open` for core features, downloads via `<a download>`/Blob, no login or third-party cookies (they are blocked in iframes).
+
+Quick test page:
+```html
+<iframe src="https://example.com/tools/slug" width="360" height="270" style="border:1px solid #ccc"></iframe>
+<iframe src="https://example.com/tools/slug" width="560" height="420" style="border:1px solid #ccc"></iframe>
+```
 
 ## 7. Verify
 - `curl -s <URL> | grep -E 'twitter:|og:'` shows every tag in the raw HTML with absolute HTTPS URLs. If nothing shows up, the tags are being added client-side; fix with prerender/SSR or `index.html`.

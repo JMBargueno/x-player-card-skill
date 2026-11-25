@@ -96,6 +96,9 @@ These are the same on every stack:
 2. **The page can be framed by X.** Do not send `X-Frame-Options: DENY` or `SAMEORIGIN`. Send a CSP `frame-ancestors` list that includes X.
 3. **Everything is HTTPS with absolute URLs** — the page, `twitter:player`, and the preview image.
 
+
+> **Fit the card, no scroll.** The app must fit entirely inside the post's card. X scales the iframe to the post width (about 500-600 px on desktop web, 320-400 px on mobile, approximate), keeping the aspect ratio of `twitter:player:width`/`height` (default 1200x900, 4:3). Build to the viewport with `overflow: hidden` and test at ~360x270 and ~560x420. See section 6 of the skill.
+
 ## Supported stacks
 
 | Stack | How the tags get into the raw HTML |
