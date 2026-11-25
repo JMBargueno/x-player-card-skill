@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Player card app mark, dark variant">
+  <defs>
+    <linearGradient id="badgeDark" x1="80" y1="40" x2="440" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1E1B4B"/>
+      <stop offset="0.55" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#0B3A4A"/>
+    </linearGradient>
+    <linearGradient id="ringDark" x1="80" y1="40" x2="440" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A5B4FC"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="appFillDark" x1="160" y1="176" x2="350" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1E1B4B"/>
+      <stop offset="1" stop-color="#164E63"/>
+    </linearGradient>
+    <linearGradient id="playFillDark" x1="214" y1="226" x2="300" y2="314" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <filter id="glowDark" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#6366F1" flood-opacity="0.45"/>
+    </filter>
+    <filter id="cursorShadowDark" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#022C22" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <rect x="28" y="28" width="456" height="456" rx="112" fill="url(#badgeDark)"/>
+  <rect x="44" y="44" width="424" height="424" rx="100" fill="none" stroke="url(#ringDark)" stroke-width="3"/>
+
+  <rect x="122" y="126" width="268" height="272" rx="38" fill="#0B1220" stroke="#334155" stroke-width="2" filter="url(#glowDark)"/>
+
+  <rect x="146" y="162" width="220" height="200" rx="24" fill="url(#appFillDark)"/>
+  <rect x="146" y="162" width="220" height="200" rx="24" fill="none" stroke="#6366F1" stroke-opacity="0.55" stroke-width="1.5"/>
+
+  <circle cx="170" cy="184" r="6.5" fill="#818CF8"/>
+  <circle cx="191" cy="184" r="6.5" fill="#22D3EE"/>
+  <circle cx="212" cy="184" r="6.5" fill="#A5B4FC"/>
+
+  <circle cx="256" cy="268" r="44" fill="url(#playFillDark)"/>
+  <path d="M245.5 248.5 L245.5 287.5 L280.5 268 Z" fill="#0B1220"/>
+
+  <g transform="translate(318,310)" filter="url(#cursorShadowDark)">
+    <path d="M0 0 L0 34 L8.5 26.5 L15.5 41.5 L20.5 39.2 L13.2 24.2 L24 22.5 Z" fill="#ECFEFF"/>
+    <path d="M3.2 6.2 L3.2 28.2 L8.8 22.8 L15.2 36.2 L17.8 34.9 L11.2 21.2 L19.6 20 Z" fill="#0F172A"/>
+  </g>
+</svg>

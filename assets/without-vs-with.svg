@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1180" viewBox="0 0 2000 1180" role="img" aria-label="Illustration comparing a standard link preview with an embedded player card app">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="2000" y2="1180" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F1F5F9"/>
+      <stop offset="1" stop-color="#EEF2FF"/>
+    </linearGradient>
+    <linearGradient id="avatarL" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="staticArt" x1="140" y1="250" x2="840" y2="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6366F1"/>
+      <stop offset="0.55" stop-color="#4338CA"/>
+      <stop offset="1" stop-color="#0E7490"/>
+    </linearGradient>
+    <linearGradient id="liveArt" x1="1160" y1="360" x2="1760" y2="620" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C7D2FE"/>
+      <stop offset="0.5" stop-color="#A5F3FC"/>
+      <stop offset="1" stop-color="#818CF8"/>
+    </linearGradient>
+    <linearGradient id="btnP" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#0E7490"/>
+    </linearGradient>
+    <filter id="panel" x="-10%" y="-8%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#1E1B4B" flood-opacity="0.14"/>
+    </filter>
+    <filter id="cursor2" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="2000" height="1180" fill="url(#bg2)"/>
+  <circle cx="120" cy="200" r="160" fill="#C7D2FE" fill-opacity="0.4"/>
+  <circle cx="1900" cy="1000" r="180" fill="#A5F3FC" fill-opacity="0.35"/>
+
+  <text x="1000" y="58" text-anchor="middle" font-family="Inter, Plus Jakarta Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="3.2" fill="#6366F1">ILLUSTRATION</text>
+  <text x="1000" y="98" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="32" font-weight="700" fill="#0F172A">The same link, two kinds of card</text>
+  <text x="1000" y="132" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#475569">A standard link preview shows a picture. A player card embeds the app itself.</text>
+
+  <!-- LEFT PANEL: without -->
+  <g filter="url(#panel)">
+    <rect x="80" y="176" width="840" height="920" rx="32" fill="#ffffff"/>
+  </g>
+  <rect x="80" y="176" width="12" height="920" rx="6" fill="#94A3B8"/>
+  <text x="500" y="228" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" letter-spacing="1.8" fill="#64748B">WITHOUT A PLAYER CARD</text>
+  <text x="500" y="258" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="24" font-weight="700" fill="#0F172A">Standard preview</text>
+  <text x="500" y="286" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" fill="#64748B">summary_large_image — static title, image, and link</text>
+
+  <!-- mini post -->
+  <circle cx="156" cy="340" r="22" fill="url(#avatarL)"/>
+  <text x="156" y="346" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#ffffff">YH</text>
+  <text x="192" y="336" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#0F172A">@yourhandle</text>
+  <text x="192" y="356" font-family="Inter, sans-serif" font-size="13" fill="#64748B">just now</text>
+  <text x="134" y="396" font-family="Inter, sans-serif" font-size="17" fill="#0F172A">I made a tiny palette tool. Try it here:</text>
+  <text x="134" y="420" font-family="Inter, sans-serif" font-size="17" fill="#4F46E5">example.com/tools/palette-studio</text>
+
+  <!-- static card -->
+  <rect x="134" y="448" width="732" height="520" rx="20" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="134" y="448" width="732" height="300" rx="20" fill="url(#staticArt)"/>
+  <rect x="134" y="724" width="732" height="24" fill="url(#staticArt)"/>
+  <!-- decorative static shapes in the image area -->
+  <rect x="400" y="530" width="200" height="120" rx="20" fill="#ffffff" fill-opacity="0.18"/>
+  <rect x="430" y="556" width="48" height="68" rx="8" fill="#ffffff" fill-opacity="0.85"/>
+  <rect x="486" y="556" width="48" height="68" rx="8" fill="#ffffff" fill-opacity="0.7"/>
+  <rect x="542" y="556" width="48" height="68" rx="8" fill="#ffffff" fill-opacity="0.55"/>
+  <text x="500" y="678" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" letter-spacing="1.4" fill="#E0E7FF">STATIC IMAGE</text>
+
+  <text x="166" y="796" font-family="Inter, sans-serif" font-size="22" font-weight="700" fill="#0F172A">Palette Studio</text>
+  <text x="166" y="828" font-family="Inter, sans-serif" font-size="16" fill="#475569">A tiny color tool for mixing and saving palettes.</text>
+  <text x="166" y="870" font-family="Inter, sans-serif" font-size="14" font-weight="600" letter-spacing="0.8" fill="#94A3B8">EXAMPLE.COM</text>
+  <text x="166" y="930" font-family="Inter, sans-serif" font-size="14" fill="#94A3B8">Looks like a link. You have to leave the post to use it.</text>
+
+  <!-- VS pill -->
+  <circle cx="1000" cy="620" r="36" fill="#0F172A"/>
+  <text x="1000" y="628" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="800" fill="#ffffff">VS</text>
+
+  <!-- RIGHT PANEL: with -->
+  <g filter="url(#panel)">
+    <rect x="1080" y="176" width="840" height="920" rx="32" fill="#ffffff"/>
+  </g>
+  <rect x="1080" y="176" width="12" height="920" rx="6" fill="#4F46E5"/>
+  <text x="1500" y="228" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" letter-spacing="1.8" fill="#4F46E5">WITH A PLAYER CARD</text>
+  <text x="1500" y="258" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="24" font-weight="700" fill="#0F172A">Embedded app</text>
+  <text x="1500" y="286" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" fill="#64748B">twitter:card = player — a live iframe in the post</text>
+
+  <circle cx="1156" cy="340" r="22" fill="url(#avatarL)"/>
+  <text x="1156" y="346" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#ffffff">YH</text>
+  <text x="1192" y="336" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#0F172A">@yourhandle</text>
+  <text x="1192" y="356" font-family="Inter, sans-serif" font-size="13" fill="#64748B">just now</text>
+  <text x="1134" y="396" font-family="Inter, sans-serif" font-size="17" fill="#0F172A">I made a tiny palette tool. Try it here:</text>
+  <text x="1134" y="420" font-family="Inter, sans-serif" font-size="17" fill="#4F46E5">example.com/tools/palette-studio</text>
+
+  <!-- live player -->
+  <rect x="1134" y="448" width="732" height="520" rx="20" fill="#F8FAFC" stroke="#C7D2FE" stroke-width="2"/>
+  <rect x="1134" y="448" width="732" height="56" rx="20" fill="#0F172A"/>
+  <rect x="1134" y="484" width="732" height="20" fill="#0F172A"/>
+  <circle cx="1162" cy="476" r="5.5" fill="#818CF8"/>
+  <circle cx="1182" cy="476" r="5.5" fill="#22D3EE"/>
+  <circle cx="1202" cy="476" r="5.5" fill="#A5B4FC"/>
+  <text x="1224" y="482" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#F8FAFC">Palette Studio</text>
+  <rect x="1736" y="462" width="106" height="26" rx="13" fill="#312E81"/>
+  <text x="1789" y="480" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" letter-spacing="0.6" fill="#A5B4FC">LIVE APP</text>
+
+  <rect x="1162" y="528" width="676" height="196" rx="16" fill="url(#liveArt)"/>
+  <rect x="1388" y="574" width="224" height="104" rx="18" fill="#ffffff" fill-opacity="0.92"/>
+  <rect x="1412" y="596" width="52" height="60" rx="8" fill="#4F46E5"/>
+  <rect x="1474" y="596" width="52" height="60" rx="8" fill="#0891B2"/>
+  <rect x="1536" y="596" width="52" height="60" rx="8" fill="#F59E0B"/>
+
+  <text x="1162" y="762" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#64748B">Swatches</text>
+  <rect x="1162" y="774" width="52" height="52" rx="12" fill="#4F46E5"/>
+  <rect x="1226" y="774" width="52" height="52" rx="12" fill="#0891B2"/>
+  <rect x="1290" y="774" width="52" height="52" rx="12" fill="#F59E0B"/>
+  <rect x="1354" y="774" width="52" height="52" rx="12" fill="#F8FAFC" stroke="#4F46E5" stroke-width="3"/>
+  <rect x="1426" y="788" width="200" height="22" rx="11" fill="#E2E8F0"/>
+  <circle cx="1490" cy="799" r="13" fill="#4F46E5"/>
+
+  <rect x="1162" y="850" width="180" height="48" rx="12" fill="#ffffff" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="1252" y="880" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#334155">Shuffle</text>
+  <rect x="1358" y="850" width="180" height="48" rx="12" fill="url(#btnP)"/>
+  <text x="1448" y="880" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#ffffff">Save PNG</text>
+
+  <g transform="translate(1504,886)" filter="url(#cursor2)">
+    <path d="M0 0 L0 28 L7 22 L13 34.5 L17 32.8 L10.8 20 L20 18.8 Z" fill="#0F172A"/>
+    <path d="M2.6 5 L2.6 23 L7.2 18.8 L12.6 30 L14.6 29 L9.2 17.6 L16.4 16.6 Z" fill="#ffffff"/>
+  </g>
+
+  <text x="1134" y="1048" font-family="Inter, sans-serif" font-size="14" fill="#4F46E5">People can use the tool without leaving the post.</text>
+</svg>
